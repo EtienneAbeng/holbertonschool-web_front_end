@@ -1,0 +1,101 @@
+/* Variables globales */
+:root {
+        --color-primary: #d73953; /* Couleur primaire */
+        --color-black: #090909; /* Couleur noire */
+        --color-white: #ffffff; /* Couleur blanche */
+        --color-light-grey: #f3f3f3; /* Couleur grise claire */
+        --color-dark-grey: #353535; /* Couleur grise foncée */
+        --text-color: var(--color-black); /* Couleur du texte */
+        --font-family-base: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif; /* Police de caractères de base */
+        --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Police de caractères pour les titres */
+        --font-size-small: 1.2rem; /* Taille de police petite */
+        --font-size-medium: 1.6rem; /* Taille de police moyenne */
+        --font-size-large: 1.8rem; /* Taille de police grande */
+        --font-size-x-large: 2.3rem; /* Taille de police très grande */
+        --font-size-xx-large: 4.8rem; /* Taille de police extrêmement grande */
+        --font-weight-regular: 400; /* Poids de la police régulier */
+        --font-weight-bold: 700; /* Poids de la police en gras */
+        --line-height-small: 1.2; /* Hauteur de ligne petite */
+        --line-height-base: 1.5; /* Hauteur de ligne moyenne */
+        --line-height-big: 1.8; /* Hauteur de ligne grande */
+        --section-header-align: center; /* Alignement horizontal de l'en-tête de section */
+        --section-tagline-transform: uppercase; /* Transforme les lignes du texte en majuscule */
+        --section-title-margin: 0; /* Definir la taille des marges sur les 4 côtes */
+        --section-title-color: var(--color-black); /* couleur noir pour les titres sections */
+    }
+    
+    /* Styles pour l'élément HTML */
+    html {
+        scroll-behavior: smooth; /* Comportement de défilement fluide */
+        font-size: 62.5%; /* Taille de police de base */
+    }
+    
+    /* Styles pour le corps du document */
+    body {
+        color: var(--text-color); /* Couleur du texte */
+        font-family: var(--font-family-base); /* Police de caractères */
+        font-size: var(--font-size-medium); /* Taille de police */
+        font-weight: var(--font-weight-regular); /* Poids de la police */
+        line-height: var(--line-height-base); /* Hauteur de ligne */
+    }
+    
+    /* Styles pour les liens */
+    a:link {
+        color: #161616; /* Couleur des liens */
+        text-decoration: none; /* Pas de soulignement */
+    }
+    /* Cible l'état visité du lien */
+    a:visited {
+        font-style: italic; /* Italique pour le texte */
+    }
+    /* Cible l'état de survol du line */
+    a:hover {
+        text-decoration: underline; /* Soulignement pour le survol */
+    }
+    /* Cible l'etat actif pour le line */
+    a:active {
+        background-color: var(--color-light-grey); /* Couleur de fond pour l'état actif */
+    }
+    
+    
+    /* Styles pour les titres */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-family-title); /* Police de caractères */
+        font-weight: var(--font-weight-bold); /* Poids de la police */
+    }
+    
+    /* Styles pour les éléments cachés visuellement */
+    .visually-hidden {
+        display: none; /* Masquer l'élément */
+    }
+    
+    /* Styles pour les catégories de cartes */
+    .card-category {
+        color: var(--color-primary); /* Couleur de la catégorie de carte */
+    }
+    
+    /* Styles pour le slogan de section */
+    .section-tagline {
+        color: var(--color-primary); /* Couleur du slogan de section */
+        font-family: var(--font-family-title);
+    }
+    
+    /* Styles pour l'en-tête de section */
+    .section-header {
+        text-align: var(--section-header-align); /* Alignement horizontal de l'en-tête de section */
+    }
+    
+    /*Style pour les tag pour les section */
+    .section-tagline {
+        font-family: var(--font-family-title); /* Police de caractères pour les titres */
+        text-transform: var(--section-tagline-transform); /* Permet écrire le texte en majuscule*/
+        font-weight: var(--font-weight-bold); /* Poids de la police */
+    }
+    /* Style pour les titres des sections */
+    .section-title {
+        font-family: var(--font-family-title); /* Police de caractères pour les titres */
+        font-size: var(--font-size-xx-large); /* Taille de police */
+        font-weight: var(--font-weight-bold); /* Poids de la police */
+        margin: var(--section-title-margin); /* Definir la taille des marges sur les 4 côtes */
+        color: var(--section-title-color); /* couleur noir pour les titres sections */
+    }
