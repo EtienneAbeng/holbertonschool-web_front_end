@@ -1,6 +1,6 @@
 /* Variables globales */
 :root {
-        --color-primary: #d73953; /* Couleur rouge */
+        --color-primary: #d73953; /* Couleur primaire */
         --color-black: #090909; /* Couleur noire */
         --color-white: #ffffff; /* Couleur blanche */
         --color-light-grey: #f3f3f3; /* Couleur grise claire */
@@ -19,6 +19,7 @@
         --line-height-base: 1.5; /* Hauteur de ligne moyenne */
         --line-height-big: 1.8; /* Hauteur de ligne grande */
         --section-header-align: center; /* Alignement horizontal de l'en-tête de section */
+        --section-tagline-transform: uppercase; /* Transforme les lignes du texte en majuscule */
     }
     
     /* Styles pour l'élément HTML */
@@ -61,6 +62,8 @@
     /* Styles pour le slogan de section */
     .section-tagline {
         color: var(--color-primary); /* Couleur du slogan de section */
+        font-family: var(--font-family-title);
+
     }
     
     /* Styles pour l'en-tête de section */
@@ -68,3 +71,8 @@
         text-align: var(--section-header-align); /* Alignement horizontal de l'en-tête de section */
     }
     
+    .section-tagline{
+        font-family: var(--font-family-title); /* Police de caractères pour les titres */
+        text-transform: var(--section-tagline-transform); /* Permet écrire le texte en majuscule*/
+        font-weight: var(--font-weight-bold); /* Poids de la police */
+    }
