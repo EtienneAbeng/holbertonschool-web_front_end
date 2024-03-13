@@ -21,7 +21,7 @@
         --section-header-align: center; /* Alignement horizontal de l'en-tête de section */
         --section-tagline-transform: uppercase; /* Transforme les lignes du texte en majuscule */
         --section-title-margin: 0; /* Definir la taille des marges sur les 4 côtes */
-        --section-title-color: color-black; /* couleur noir pour les titres sections */
+        --section-title-color: var(--color-black); /* couleur noir pour les titres sections */
     }
     
     /* Styles pour l'élément HTML */
