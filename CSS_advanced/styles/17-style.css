@@ -372,19 +372,19 @@
         --section-tagline-transform: uppercase; /* Transforme les lignes du texte en majuscule */
         --section-title-margin: 0; /* Definir la taille des marges sur les 4 côtes */
         --section-title-color: var(--color-black); /* couleur noir pour les titres sections */
-        --section-padding: 5rem 0;
-        --section-header-padding : 0 0 3rem;
-        --section-body-padding:0 0 3rem;
-        --section-footer-padding: 3rem 0 0;
-        --section-footer-align: center;
-        --footer-padding: 5rem 0 1rem;
-    }
+        --section-padding: 5rem 0; /* Définition de la marge des sections */
+        --section-header-padding: 0 0 3rem; /* Définition de la marge du header des sections */
+        --section-body-padding: 0 0 3rem; /* Définition de la marge du corps des sections */
+        --section-footer-padding: 3rem 0 0; /* Définition de la marge du footer des sections */
+        --section-footer-align: center; /* Définition de l'alignement horizontal du footer des sections */
+        --footer-padding: 5rem 0 1rem; /* Définition de la marge du footer */
+}
 
     /* La règle s'applique à tous les éléments, ainsi qu'à leurs pseudo-éléments ::before et ::after */
-*, *:before, *:after {
-  /* La boîte du modèle de la zone de contenu comprend à la fois le contenu et le remplissage, mais exclut la bordure et la marge */
-  box-sizing: border-box;
-}
+    *, *:before, *:after {
+      /* La boîte du modèle de la zone de contenu comprend à la fois le contenu et le remplissage, mais exclut la bordure et la marge */
+      box-sizing: border-box;
+    }
 
     
     /* Styles pour l'élément HTML */
@@ -442,37 +442,33 @@
         color: var(--color-primary); /* Couleur du slogan de section */
         font-family: var(--font-family-title);
     }
+    /* Section padding */
+    .section {
+      padding: var(--section-padding); /* Applique la marge définie pour les sections */
+    }
 
-    
-    /* Styles pour l'en-tête de section */
+    /* Section header padding */
     .section-header {
-        text-align: var(--section-header-align); /* Alignement horizontal de l'en-tête de section */
-        padding: var(--section-header-padding);
+      padding: var(--section-header-padding); /* Applique la marge définie pour les headers des sections */
     }
 
+    /* Section body padding */
     .section-body {
-        padding: var(--section-body-padding);
+      padding: var(--section-body-padding); /* Applique la marge définie pour les corps des sections */
     }
 
+    /* Section footer padding and alignment */
     .section-footer {
-      padding: var(--section-footer-padding);
-      text-align: var(--section-footer-align);
-   }
-    
-    /*Style pour les tag pour les section */
-    .section-tagline {
-        font-family: var(--font-family-title); /* Police de caractères pour les titres */
-        text-transform: var(--section-tagline-transform); /* Permet écrire le texte en majuscule*/
-        font-weight: var(--font-weight-bold); /* Poids de la police */
+      padding: var(--section-footer-padding); /* Applique la marge définie pour les footers des sections */
+      text-align: var(--section-footer-align); /* Alignement horizontal du texte dans le footer */
     }
 
-    section {
-      padding: var(--section-padding);
+    /* Footer padding */
+    .footer {
+      padding: var(--footer-padding); /* Applique la marge définie pour le footer */
     }
+        
     
-    /* Définit un conteneur avec une largeur de 960 pixels.
-    Centrer le conteneur horizontalement en utilisant les marges automatiques à gauche et à droite.*/
-
     .container {
         width: 960px;
         margin-left: auto;
