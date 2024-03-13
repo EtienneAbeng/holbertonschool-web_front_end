@@ -73,13 +73,13 @@
         text-align: var(--section-header-align); /* Alignement horizontal de l'en-tête de section */
     }
     
-    .section-tagline{
+    .section-tagline {
         font-family: var(--font-family-title); /* Police de caractères pour les titres */
         text-transform: var(--section-tagline-transform); /* Permet écrire le texte en majuscule*/
         font-weight: var(--font-weight-bold); /* Poids de la police */
     }
 
-    .section-title::after{
+    .section-title {
         font-family: var(--font-family-title); /* Police de caractères pour les titres */
         font-size: var(--font-size-xx-large); /* Taille de police */
         font-weight: var(--font-weight-bold); /* Poids de la police */
