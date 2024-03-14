@@ -401,8 +401,6 @@ template {
         --header-logo-link-position: absolute; /* Position du lien du logo de l'en-tête */
         --header-logo-link-top: -1rem; /* Position verticale du lien du logo de l'en-tête */
         --header-logo-link-left: 0; /* Position horizontale du lien du logo de l'en-tête */
-        --transition-duration: .3s;
-        --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
     }
 
     /* La règle s'applique à tous les éléments, ainsi qu'à leurs pseudo-éléments ::before et ::after */
@@ -478,7 +476,6 @@ template {
       background-color: var(--color-white); /* Couleur de fond définie par la variable color-white */
       width: 0; /* Largeur initiale nulle */
       height: 20%; /* Hauteur égale à 20% de la hauteur de l'élément parent */
-      transition: var(–-transition-duration) var(--transition-cubic-bezier);
     }
 
     /* Cible les pseudo-éléments ::before des éléments .nav-link lorsqu'un élément .nav-item est survolé et est à l'intérieur d'un élément nav */
@@ -668,8 +665,6 @@ template {
         color: var(--button-hover-color); /* Couleur du texte au survol */
         text-decoration: var(--button-hover-text-decoration); /* Décoration du texte au survol */
         background-color: var(--button-hover-background); /* Couleur de fond au survol */
-        transition-duration: color, --transition-duration;
-        transition-property: background-color;
       }
 
       /* Dans le thème sombre, définir une couleur de texte pour les boutons */
@@ -726,10 +721,6 @@ template {
         overflow: hidden; /* Cache tout dépassement */
       }
 
-      .card-work .card-outer:hover {
-        transform:scale(0.95);
-      }
-
       /* Cible l'image à l'intérieur de card-image dans card-work */
       .card-work .card-image img {
         height: 30rem; /* Hauteur fixe */
@@ -737,12 +728,6 @@ template {
         object-fit: cover; /* Ajuste l'image pour couvrir la boîte de manière proportionnelle */
         vertical-align: bottom; /* Alignement vertical en bas */
       }
-
-      .card-work .card-image:hover {
-        transform: scale(1.2);
-        transition: var(--transition-duration) var(--transition-cubic-bezier);
-      }
-
 
       /* Cible card-inner à l'intérieur de card-work */
       .card-work .card-inner {
@@ -756,7 +741,6 @@ template {
       /* Cible card-inner lorsque card-work est survolé */
       .card-work:hover .card-inner {
         background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent noir lors du survol */
-        transition: var(–-transition-duration) var(--transition-cubic-bezier);
       }
 
       /* Cible card-title à l'intérieur de card-work */
