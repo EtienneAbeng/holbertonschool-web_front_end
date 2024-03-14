@@ -468,7 +468,7 @@ template {
     }
 
     /* Cible les pseudo-éléments ::before des éléments .nav-link à l'intérieur d'un élément nav */
-    .nav-link:before {
+    .nav .nav-link::before {
       content: ""; /* Contenu vide pour les pseudo-éléments */
       position: absolute; /* Position absolue */
       top: 0; /* Position verticale en haut */
@@ -479,7 +479,7 @@ template {
     }
 
     /* Cible les pseudo-éléments ::before des éléments .nav-link lorsqu'un élément .nav-item est survolé et est à l'intérieur d'un élément nav */
-    .nav:hover .nav-item:hover .nav-link:before {
+    .nav .nav-item:hover .nav-link::before {
       background-color: var(--color-primary); /* Couleur de fond définie par la variable color-primary */
       width: 100%; /* Largeur de 100% */
     }
