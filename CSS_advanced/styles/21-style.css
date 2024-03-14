@@ -552,20 +552,12 @@ template {
       padding: 0; /* Réinitialisation du rembourrage */
       list-style: none; /* Suppression des puces */
     }
-
-    /* Styles pour les colonnes de largeur 1/3 */
-    .col-1-3 {
-      width: 33.33%; /* Définition de la largeur à 33.33% */
-      float: left; /* Définition de la flottaison à gauche */
-      padding: 0.5rem; /* Ajout de rembourrage */
-    }
-
-    /* Styles pour les colonnes de largeur 1/2 */
-    .col-1-2 {
-      width: 50%; /* Définition de la largeur à 50% */
-      float: left; /* Définition de la flottaison à gauche */
-      padding: 0.5rem; /* Ajout de rembourrage */
-    }
+    
+    /* Sélecteur simplifié pour toutes les classes commençant par col- */
+    [class^="col-"] {
+        float: left; /* Les faire flotter vers la gauche */
+        padding: 0.5rem; /* Définir le rembourrage à la moitié de la taille de l'élément racine */
+      }
 
       .row::after {
         /* Insertion de contenu vide après chaque élément .row */
@@ -578,12 +570,14 @@ template {
         clear: both;
     }
   
-    .footer-copyright {
-      margin: 0;
-      font-size: var(--font-size-small);
-      color: var(--text-color);
-    }
+    /* Style pour le copyright dans le pied de page */
+      .footer-copyright {
+        margin: 0; /* Supprime la marge */
+        font-size: var(--font-size-small); /* Taille de police définie par une variable */
+        color: var(--text-color); /* Couleur du texte définie par une variable */
+      }
 
-    .footer ul {
-      text-align: right;
-    }
+    /* Style pour la liste dans le pied de page */
+      .footer ul {
+        text-align: right; /* Alignement du texte à droite */
+      }
