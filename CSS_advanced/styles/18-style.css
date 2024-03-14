@@ -195,8 +195,8 @@ select { /* 1 */
 button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
-  input[type="search"] {
+[type="submit"] 
+[type="search"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px 10px;
@@ -204,7 +204,7 @@ button,
     color: #333;
     /* Autres propriétés de style selon vos besoins */
 }
-}
+
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -219,8 +219,7 @@ button::-moz-focus-inner,
 }
 
 /**
- * Restore the focus styles unset by the previous rule.
- */
+ * Restore the focus styles unset by the previous rule.*/
 
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
