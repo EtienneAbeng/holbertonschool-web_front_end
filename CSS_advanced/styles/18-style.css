@@ -463,7 +463,7 @@ template {
     /* Styles pour la classe nav-link dans la classe nav */
     .nav .nav-link {
       display: block; /* Affichage en bloc */
-      padding: calc(var(--font-size-medium) / 2) var(--font-size-medium); /* Rembourrage */
+      padding: 0.5rem 1rem /* Rembourrage */
     }
 
     .nav .nav-item {
