@@ -516,27 +516,68 @@ template {
         color: var(--section-title-color); /* couleur noir pour les titres sections */
     }
 
+    /* Ajout de marge basée sur la variable personnalisée --section-tagline-margin */
+.section-a-tagline {
+  margin: var(--section-tagline-margin);
+}
+
+    /* Réinitialisation des marges, des rembourrages et des puces pour les listes */
+    ul.row {
+      margin: 0; /* Réinitialisation de la marge */
+      padding: 0; /* Réinitialisation du rembourrage */
+      list-style: none; /* Suppression des puces */
+    }
+
+    /* Styles pour les colonnes de largeur 1/3 */
+    .col-1-3 {
+      width: 33.33%; /* Définition de la largeur à 33.33% */
+      float: left; /* Définition de la flottaison à gauche */
+      padding: 0.5rem; /* Ajout de rembourrage */
+    }
+
+    /* Styles pour les colonnes de largeur 1/2 */
+    .col-1-2 {
+      width: 50%; /* Définition de la largeur à 50% */
+      float: left; /* Définition de la flottaison à gauche */
+      padding: 0.5rem; /* Ajout de rembourrage */
+    }
+    /* Ajout de marge basée sur la variable personnalisée --section-tagline-margin */
     .section-a-tagline {
       margin: var(--section-tagline-margin);
     }
 
+    /* Réinitialisation des marges, des rembourrages et des puces pour les listes */
     ul.row {
-      margin: 0;
-      padding: 0;
-      list-style: none;
+      margin: 0; /* Réinitialisation de la marge */
+      padding: 0; /* Réinitialisation du rembourrage */
+      list-style: none; /* Suppression des puces */
     }
 
+    /* Styles pour les colonnes de largeur 1/3 */
     .col-1-3 {
-      width: 33.33%;
-      float: left;
-      padding: 0.5rem;
-    }
-    .col-1-2 {
-      width: 50%;
-      float: left;
-      padding: 0.5rem;
+      width: 33.33%; /* Définition de la largeur à 33.33% */
+      float: left; /* Définition de la flottaison à gauche */
+      padding: 0.5rem; /* Ajout de rembourrage */
     }
 
+    /* Styles pour les colonnes de largeur 1/2 */
+    .col-1-2 {
+      width: 50%; /* Définition de la largeur à 50% */
+      float: left; /* Définition de la flottaison à gauche */
+      padding: 0.5rem; /* Ajout de rembourrage */
+    }
+
+      .row::after {
+        /* Insertion de contenu vide après chaque élément .row */
+        content: "";
+    
+        /* Définition du comportement du pseudo-élément comme une table */
+        display: table;
+    
+        /* Empêcher les éléments flottants de se trouver à gauche ou à droite du pseudo-élément */
+        clear: both;
+    }
+  
     .footer-copyright {
       margin: 0;
       font-size: var(--font-size-small);
@@ -547,8 +588,4 @@ template {
       text-align: right;
     }
 
-    .row {
-      content: none;
-      display: table;
-      float: none;
-    }
+    
