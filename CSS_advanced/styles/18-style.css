@@ -454,19 +454,19 @@ template {
     }
 
     /* Styles pour la classe nav */
-    nav {
+    .nav {
       margin: 0; /* Aucune marge */
       padding: 0; /* Aucun rembourrage */
       text-align: center; /* Alignement centralisé du texte */
     }
 
     /* Styles pour la classe nav-link dans la classe nav */
-    nav .nav-link {
+    .nav .nav-link {
       display: block; /* Affichage en bloc */
       padding: calc(var(--font-size-medium) / 2) var(--font-size-medium); /* Rembourrage */
     }
 
-    av .nav-item {
+    .nav .nav-item {
       font-family: var(--nav-item-font-family); /* Utilise la police de caractères définie par la variable --nav-item-font-family */
       font-weight: var(--nav-item-font-weight); /* Utilise le poids de la police défini par la variable --nav-item-font-weight */
       font-size: var(--nav-item-font-size); /* Utilise la taille de police définie par la variable --nav-item-font-size */
@@ -476,7 +476,7 @@ template {
   }
 
     /* Effet au survol pour la classe nav-link dans la classe nav */
-    nav .nav-link:hover {
+    .nav .nav-link:hover {
       color: var(--nav-item-link-hover); /* Couleur au survol */
     }
     
