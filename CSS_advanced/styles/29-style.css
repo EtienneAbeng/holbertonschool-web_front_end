@@ -443,6 +443,7 @@ template {
         background-color: var(--color-light-grey); /* Couleur de fond pour l'état actif */
     }
     
+    
     /* Styles pour les titres */
     h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-family-title); /* Police de caractères */
@@ -461,27 +462,28 @@ template {
       text-align: center; /* Alignement centralisé du texte */
     }
 
-    /* Définit la couleur du lien lorsqu'il est survolé */
+    /* Définit la couleur du lien lorsqu'il est survolé en utilisant la variable color-white */
     .nav-item-link-hover {
-      color: var(--color-white); /* Couleur définie par la variable "--color-white" */
+      color: var(--color-white);
     }
 
-    /* Ajoute un pseudo-élément ::before à chaque élément .nav-link dans un élément .nav */
-    .nav-link .nav::before {
-      content: ""; /* Contenu vide pour le pseudo-élément */
-      position: absolute; /* Position absolue par rapport à l'élément parent */
-      vertical-align: 0; /* Alignement vertical */
-      background-color: var(--color-white); /* Couleur de fond définie par la variable "--color-white" */
+    /* Cible les pseudo-éléments ::before des éléments .nav-link à l'intérieur d'un élément nav */
+    .nav-link:inside-nav::before {
+      content: ""; /* Contenu vide pour les pseudo-éléments */
+      position: absolute; /* Position absolue */
+      top: 0; /* Position verticale en haut */
+      left: 0; /* Position horizontale à gauche */
+      background-color: var(--color-white); /* Couleur de fond définie par la variable color-white */
       width: 0; /* Largeur initiale nulle */
-      height: 20%; /* Hauteur de 20% par rapport à la hauteur de l'élément parent */
+      height: 20%; /* Hauteur égale à 20% de la hauteur de l'élément parent */
     }
 
-    /* Ajoute un pseudo-élément ::before à chaque élément .nav-item dans un élément nav */
-    .nav-link .nav-item nav ::before {
-      background-color: var(--color-primary); /* Couleur de fond définie par la variable "--color-primary" */
-      width: 100%; /* Largeur de 100% par rapport à la largeur de l'élément parent */
+    /* Cible les pseudo-éléments ::before des éléments .nav-link lorsqu'un élément .nav-item est survolé et est à l'intérieur d'un élément nav */
+    .nav-item:hover .nav-link:inside-nav::before {
+      background-color: var(--color-primary); /* Couleur de fond définie par la variable color-primary */
+      width: 100%; /* Largeur de 100% */
     }
-    
+
     /* Styles pour la classe nav-link dans la classe nav */
     nav .nav-link {
       display: block; /* Affichage en bloc */
