@@ -517,9 +517,9 @@ template {
     }
 
     /* Ajout de marge basée sur la variable personnalisée --section-tagline-margin */
-.section-a-tagline {
-  margin: var(--section-tagline-margin);
-}
+    .section-a-tagline {
+        margin: var(--section-tagline-margin);
+    }
 
     /* Réinitialisation des marges, des rembourrages et des puces pour les listes */
     ul.row {
@@ -527,7 +527,7 @@ template {
       padding: 0; /* Réinitialisation du rembourrage */
       list-style: none; /* Suppression des puces */
     }
-    
+
     /* Ajout de marge basée sur la variable personnalisée --section-tagline-margin */
     .section-a-tagline {
       margin: var(--section-tagline-margin);
