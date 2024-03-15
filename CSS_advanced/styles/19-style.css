@@ -383,7 +383,7 @@ template {
         --nav-item-font-size: var(--font-size-medium); /* Taille de police */
         --nav-item-letter-spacing: 4%; /* Espacement entre les caractères */
         --nav-item-display: inline-block; /* Affichage en ligne */
-        --nav-item-margin: 0 0 calc(var(--font-size-medium) * 3) 0; /* Marge */
+        --nav-item-margin: 0 0 3 0; /* Marge */
         --nav-item-link-hover: var(--color-primary); /* Couleur au survol */
         --section-tagline-margin: 0;
     }
