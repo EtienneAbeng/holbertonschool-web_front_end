@@ -371,7 +371,7 @@ template {
         --section-header-align: center; /* Alignement horizontal de l'en-tête de section */
         --section-tagline-transform: uppercase; /* Transforme les lignes du texte en majuscule */
         --section-title-margin: 0; /* Definir la taille des marges sur les 4 côtes */
-        --section-title-color: var(--color-white); /* couleur noir pour les titres sections */
+        --section-title-color: var(--color-black); /* couleur noir pour les titres sections */
         --section-padding: 5rem 0; /* Définition de la marge des sections */
         --section-header-padding: 0 0 3rem; /* Définition de la marge du header des sections */
         --section-body-padding: 0 0 3rem; /* Définition de la marge du corps des sections */
@@ -381,9 +381,9 @@ template {
         --nav-item-font-family: var(--font-family-title); /* Police de caractères */
         --nav-item-font-weight: var(--font-weight-bold); /* Poids de la police */
         --nav-item-font-size: var(--font-size-medium); /* Taille de police */
-        --nav-item-letter-spacing: 4%; /* Espacement entre les caractères */
+        --nav-item-letter-spacing: 0.04rem; /* Espacement entre les caractères */
         --nav-item-display: inline-block; /* Affichage en ligne */
-        --nav-item-margin: 0 0 3 0; /* Marge */
+        --nav-item-margin: 0 0 3rem 0; /* Marge */
         --nav-item-link-hover: var(--color-primary); /* Couleur au survol */
         --section-tagline-margin: 0;
         --button-display: inline-block; /* Affichage en ligne */
@@ -429,7 +429,7 @@ template {
     
     /* Styles pour les liens */
     a:link {
-        color: #161616; /* Couleur des liens */
+        color: var(--text-color); /* Couleur des liens */
         text-decoration: none; /* Pas de soulignement */
     }
     /* Cible l'état visité du lien */
@@ -530,7 +530,11 @@ template {
     /* Styles pour le slogan de section */
     .section-tagline {
         color: var(--color-primary); /* Couleur du slogan de section */
-        font-family: var(--font-family-title);
+        font-family: var(--font-family-title); /* Police de caractères pour les titres */
+        text-transform: var(--section-tagline-transform); /* Permet écrire le texte en majuscule*/
+        font-weight: var(--font-weight-bold); /* Poids de la police */
+        margin: var(--section-tagline-margin);
+
     }
 
     /* Section padding */
@@ -584,11 +588,6 @@ template {
       margin: 0; /* Réinitialisation de la marge */
       padding: 0; /* Réinitialisation du rembourrage */
       list-style: none; /* Suppression des puces */
-    }
-
-    /* Ajout de marge basée sur la variable personnalisée --section-tagline-margin */
-    .section-a-tagline {
-      margin: var(--section-tagline-margin);
     }
 
     /* Réinitialisation des marges, des rembourrages et des puces pour les listes */
@@ -816,9 +815,9 @@ template {
       }
 
       /* La classe "header-logo:link" représente le lien associé au logo dans l'en-tête */
-      .header-logo:link {
+      .header-logo a {
         display: var(--header-logo-link-display); /* Définit l'affichage du lien du logo */
         position: var(--header-logo-link-position); /* Définit la position du lien du logo */
-        vertical-align: var(--header-logo-link-top); /* Alignement vertical du lien du logo */
-        position: var(--header-logo-link-left); /* Définit la position du lien du logo */
+        top: var(--header-logo-link-top); /* Alignement vertical du lien du logo */
+        left: var(--header-logo-link-left); /* Définit la position du lien du logo */
       }

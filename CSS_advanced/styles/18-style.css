@@ -395,9 +395,9 @@ template {
         --nav-item-font-family: var(--font-family-title); /* Police de caractères */
         --nav-item-font-weight: var(--font-weight-bold); /* Poids de la police */
         --nav-item-font-size: var(--font-size-medium); /* Taille de police */
-        --nav-item-letter-spacing: 4%; /* Espacement entre les caractères */
+        --nav-item-letter-spacing: 0.04rem; /* Espacement entre les caractères */
         --nav-item-display: inline-block; /* Affichage en ligne */
-        --nav-item-margin: 0 0 3 0; /* Marge */
+        --nav-item-margin: 0 0 3rem 0; /* Marge */
         --nav-item-link-hover: var(--color-primary); /* Couleur au survol */
     }
 
@@ -457,6 +457,7 @@ template {
     .nav {
       margin: 0; /* Aucune marge */
       padding: 0; /* Aucun rembourrage */
+      list-style: none;
       text-align: center; /* Alignement centralisé du texte */
     }
 
