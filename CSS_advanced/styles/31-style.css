@@ -408,7 +408,6 @@ template {
       /* La boîte du modèle de la zone de contenu comprend à la fois le contenu et le remplissage, mais exclut la bordure et la marge */
       box-sizing: border-box;
     }
-
     
     /* Styles pour l'élément HTML */
     html {
@@ -527,7 +526,10 @@ template {
     /* Styles pour le slogan de section */
     .section-tagline {
         color: var(--color-primary); /* Couleur du slogan de section */
-        font-family: var(--font-family-title);
+        font-family: var(--font-family-title); /* Police de caractères pour les titres */
+        text-transform: var(--section-tagline-transform); /* Permet écrire le texte en majuscule*/
+        font-weight: var(--font-weight-bold); /* Poids de la police */
+        margin: var(--section-tagline-margin);
     }
     /* Section padding */
     .section {
@@ -580,11 +582,6 @@ template {
       margin: 0; /* Réinitialisation de la marge */
       padding: 0; /* Réinitialisation du rembourrage */
       list-style: none; /* Suppression des puces */
-    }
-
-    /* Ajout de marge basée sur la variable personnalisée --section-tagline-margin */
-    .section-a-tagline {
-      margin: var(--section-tagline-margin);
     }
 
     /* Réinitialisation des marges, des rembourrages et des puces pour les listes */

@@ -441,6 +441,9 @@
     .section-tagline {
         color: var(--color-primary); /* Couleur du slogan de section */
         font-family: var(--font-family-title);
+        font-family: var(--font-family-title); /* Police de caractères pour les titres */
+        text-transform: var(--section-tagline-transform); /* Permet écrire le texte en majuscule*/
+        font-weight: var(--font-weight-bold); /* Poids de la police */
     }
     /* Section padding */
     .section {

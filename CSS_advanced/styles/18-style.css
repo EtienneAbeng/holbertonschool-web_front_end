@@ -494,7 +494,12 @@ template {
     .section-tagline {
         color: var(--color-primary); /* Couleur du slogan de section */
         font-family: var(--font-family-title);
+        font-family: var(--font-family-title); /* Police de caractères pour les titres */
+        text-transform: var(--section-tagline-transform); /* Permet écrire le texte en majuscule*/
+        font-weight: var(--font-weight-bold); /* Poids de la police */
+        margin: var(--section-tagline-margin);
     }
+
     /* Section padding */
     .section {
       padding: var(--section-padding); /* Applique la marge définie pour les sections */
@@ -521,14 +526,12 @@ template {
       padding: var(--footer-padding); /* Applique la marge définie pour le footer */
     }
         
-    
     .container {
         width: 960px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    
     /* Style pour les titres des sections */
     .section-title {
         font-family: var(--font-family-title); /* Police de caractères pour les titres */

@@ -498,9 +498,13 @@ template {
 
     /* Styles pour le slogan de section */
     .section-tagline {
-        color: var(--color-primary); /* Couleur du slogan de section */
-        font-family: var(--font-family-title);
-    }
+      color: var(--color-primary); /* Couleur du slogan de section */
+      font-family: var(--font-family-title);
+      font-family: var(--font-family-title); /* Police de caractères pour les titres */
+      text-transform: var(--section-tagline-transform); /* Permet écrire le texte en majuscule*/
+      font-weight: var(--font-weight-bold); /* Poids de la police */
+      margin: var(--section-tagline-margin);
+  }
     /* Section padding */
     .section {
       padding: var(--section-padding); /* Applique la marge définie pour les sections */
@@ -542,11 +546,6 @@ template {
         font-weight: var(--font-weight-bold); /* Poids de la police */
         margin: var(--section-title-margin); /* Definir la taille des marges sur les 4 côtes */
         color: var(--section-title-color); /* couleur noir pour les titres sections */
-    }
-
-    /* Ajout de marge basée sur la variable personnalisée --section-tagline-margin */
-    .section-a-tagline {
-        margin: var(--section-tagline-margin);
     }
 
     /* Réinitialisation des marges, des rembourrages et des puces pour les listes */
