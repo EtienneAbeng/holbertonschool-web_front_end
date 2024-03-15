@@ -74,12 +74,6 @@
         color: var(--color-primary); /* Couleur de la catégorie de carte */
     }
     
-    /* Styles pour le slogan de section */
-    .section-tagline {
-        color: var(--color-primary); /* Couleur du slogan de section */
-        font-family: var(--font-family-title);
-    }
-    
     /* Styles pour l'en-tête de section */
     .section-header {
         text-align: var(--section-header-align); /* Alignement horizontal de l'en-tête de section */
@@ -87,6 +81,8 @@
     
     /*Style pour les tag pour les section */
     .section-tagline {
+        color: var(--color-primary); /* Couleur du slogan de section */
+        font-family: var(--font-family-title);
         font-family: var(--font-family-title); /* Police de caractères pour les titres */
         text-transform: var(--section-tagline-transform); /* Permet écrire le texte en majuscule*/
         font-weight: var(--font-weight-bold); /* Poids de la police */
