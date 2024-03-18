@@ -564,7 +564,7 @@ template {
 
       .row::after {
         /* Insertion de contenu vide après chaque élément .row */
-        content: "";
+        content: '';
     
         /* Définition du comportement du pseudo-élément comme une table */
         display: table;
