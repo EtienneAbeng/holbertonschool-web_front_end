@@ -527,12 +527,14 @@ template {
       list-style: none; /* Suppression des puces */
     }
 
-    /* Réinitialisation des marges, des rembourrages et des puces pour les listes */
-    ul.row {
-      margin: 0; /* Réinitialisation de la marge */
-      padding: 0; /* Réinitialisation du rembourrage */
-      list-style: none; /* Suppression des puces */
+    .col-1-3 {
+      width: 33.33%;
     }
+    
+    .col-1-2 {
+      width: 50%;
+    }
+    
     
     /* Sélecteur simplifié pour toutes les classes commençant par col- */
     [class^="col-"] {
